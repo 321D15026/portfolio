@@ -1,6 +1,6 @@
 /* CSS 変数定義 */
 :root {
-    --primary-bg: #e09a9a;
+    --primary-bg: #140e0e;
     --secondary-bg: #fe772e;
     --primary-color: white;
     --secondary-color: #391400;
@@ -104,7 +104,11 @@ main #main-images img{
         justify-content: space-between;
     }
     .main-latestwork {
+        /*
         flex-basis: 33%;
+        */
+        min-width: 300px;
+        margin-right: 10px;
     }
     main #main-images{
         flex-wrap: nowrap;
@@ -409,8 +413,17 @@ header{
     height: 100%;
 }
   
-.main-latestwork-images{
+#main-latestwork-images{
+    /*
     max-width: 800px;
     max-height: 800px;
+    */
+    width: 100%;
     overflow: scroll;
 }
+.main-latestwork {
+    width: 400px;
+}
+.main-latestwork-images {width: 100%; overflow-x: scroll;}
+.main-latestwork-images {width: 900px; border: solid 1px #000000;}
+.main-latestwork-images {width: 300px;}
